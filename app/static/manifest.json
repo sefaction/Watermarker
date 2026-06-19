@@ -1,0 +1,15 @@
+{
+  "name": "Watermarker",
+  "short_name": "Watermarker",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#e8eef5",
+  "theme_color": "#1769e0",
+  "icons": [
+    {
+      "src": "/static/icon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
