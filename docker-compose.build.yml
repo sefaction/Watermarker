@@ -1,0 +1,17 @@
+services:
+  watermarker:
+    build: .
+    image: watermarker:local
+    ports:
+      - "8000:8000"
+    environment:
+      MAX_UPLOAD_MB: "16"
+      WATERMARK_SCALE_PERCENT: "35"
+      WATERMARK_MARGIN_PX: "10"
+      JOB_RETENTION_HOURS: "24"
+    volumes:
+      - watermarker-instance:/app/instance
+    restart: unless-stopped
+
+volumes:
+  watermarker-instance:
