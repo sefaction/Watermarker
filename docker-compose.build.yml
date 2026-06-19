@@ -1,7 +1,7 @@
 services:
   watermarker:
-    image: ${WATERMARKER_IMAGE:-ghcr.io/your-github-username/watermarker:latest}
-    pull_policy: always
+    build: .
+    image: watermarker:local
     ports:
       - "8000:8000"
     environment:
